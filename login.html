@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+  <script type="module" src="signup.js" defer></script>
+  <script type="module" src="login.js" defer></script>
+</head>
+<body>
+  <header class="sidebar-header">
+    
+    <h1 style="font-size: 35px;">Community Event Sharing Platform</h1>
+    
+  </header>
+
+  
+  
+  <div class="container">
+    <div id="login-div" class="auth-div">
+      
+      <h2>Login to Organise Events</h2>
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button id="login-button">Login</button>
+      <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+      <p>Forgot password? <a href="forgot-password.html">Reset here</a></p>
+      <h3>-------- or --------</h3>
+      <button id="explore-button" onclick="window.location.href='join_events.html'" style="font-size: 20px; margin-top: 10px; font-family: 'Poppins', sans-serif;padding: 18px;">Explore Events</button>
+      
+    </div>
+
+    <div id="user-div" class="auth-div" style="display: none;">
+      <h2>Are you sure you want to logout?</h2>
+      <p id="user-name"></p>
+      <button id="logout-button">Logout</button>
+    </div>
+  </div>
+</body>
+</html>

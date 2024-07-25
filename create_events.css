@@ -1,0 +1,200 @@
+
+		
+	  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        
+        
+        
+        body {
+			background-image: linear-gradient(to left, #5a5acb,#c5ccea67);
+			font-family: Montserrat, sans-serif; /* Modern font */
+           
+        
+		}
+        .sidebar-header {
+            position: absolute;
+            top: 1;
+            left: 1;
+            right: 0;
+            margin: 50px;
+            font-family: 'Poppins', sans-serif;background: linear-gradient(to left, #ffffff, #f7f9ffe3);
+            
+            color: #ffffff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+		
+		.container {
+			
+			align-items: flex-start;
+			margin-top: 148px;
+			padding: 30px;
+			
+		}
+		
+		
+	
+        .form-column {
+            flex: 2;
+            padding: 20px ;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            font-weight: bold;
+			color: #5a5acb;
+            box-shadow: 5px 6px 16px #5c5d6367;
+			margin-top: -110px;
+           
+        }
+
+        .form-column:nth-child(odd) {
+            background-color: #ffffff;
+            height: 1300px;
+            width: 50%;
+            align-items: flex-start;
+        }
+        
+        
+
+        .form-column label {
+            display: block;
+            margin-bottom: 5px;
+            padding: 0px 0px;
+            transition: all 0.5s ease;
+        }
+
+
+
+
+
+       /* Special effects for text input */
+        .form-column input[type="text"],
+        .form-column input[type="date"],
+        .form-column input[type="time"],
+        .form-column input[type="tel"],
+        .form-column input[type="email"],
+        .form-column textarea,
+        .form-column select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid transparent; /* Transparent border by default */
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #000000e0;
+            background-color: #a7b1f644;
+            transition: all 0.5s ease; /* Smooth transition on hover and focus */
+        }
+
+        /* Special effects for text input on hover */
+        .form-column input[type="text"]:hover,
+        .form-column input[type="date"]:hover,
+        .form-column input[type="time"]:hover,
+        .form-column input[type="tel"]:hover,
+        .form-column input[type="email"]:hover,
+        .form-column textarea:hover,
+        .form-column select:hover {
+            background-color: #ffffff;
+            border-color: #5a5acb; /* Change border color on hover */
+        }
+
+        /* Special effects for text input on focus */
+        .form-column input[type="text"]:focus,
+        .form-column input[type="date"]:focus,
+        .form-column input[type="time"]:focus,
+        .form-column input[type="tel"]:focus,
+        .form-column input[type="email"]:focus,
+        .form-column textarea:focus,
+        .form-column select:focus {
+            border-color: #5a5acb; /* Change border color on focus */
+            box-shadow: 0 0 5px rgba(90, 90, 203, 0.5); /* Add shadow on focus */
+        }
+            
+
+        
+
+        .form-column select {
+            padding: 10px 10px;
+        }
+          /* Special effect for label and associated input on hover */
+.form-column label:hover,
+.form-column input[type="text"]:hover,
+.form-column input[type="date"]:hover,
+.form-column input[type="time"]:hover,
+.form-column input[type="tel"]:hover,
+.form-column input[type="email"]:hover,
+.form-column textarea:hover,
+.form-column select:hover {
+    
+}
+
+        .form-column button {
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            background-color: #ffffff;
+            color: #5a5acb;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 5px 6px 16px #5c5d6367;
+
+        }
+        
+
+        .form-column button:hover {
+            color: #fffefe;
+            background-color: #5a5acb;
+            padding: 25px ;
+        }
+        /* CSS styles for image upload field */
+#eventImage {
+  display: none; /* Hide the default file input */
+}
+
+.upload-btn {
+  background-color: #ffffff; /* Green */
+  border-radius: 15px;
+  color: #5a5acb;
+  padding: 23px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 5px 6px 16px #5c5d6367;
+  transition: all 0.3s ease;
+}
+
+.upload-btn:hover  {
+    color: #fffefe;
+    background-color: #5a5acb;
+    padding: 30px 35px;
+    border-radius: 10px;
+}
+
+.upload-btn:focus {
+  outline: none;
+}
+
+.upload-btn-label {
+  cursor: pointer;
+}
+
+/* Style for the selected file name display */
+.file-name {
+  margin-top: 10px;
+}
+
+
+    
+       
+		
+	
+	
+
+
+

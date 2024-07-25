@@ -1,0 +1,120 @@
+
+body {
+  background-image: linear-gradient(to left, #5a5acb, #c5ccea67);
+  font-family: Montserrat, sans-serif; /* Modern font */
+  display: flex;
+  justify-content: flex-start; /* Align container to the right */
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.sidebar-header {
+  position: absolute;
+  top: 1;
+  left: 1;
+  right: 0;
+  margin: 50px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to left,#ffffff, #f7f9ffe3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.container {
+  
+  border: 2px #3d3ca0;
+  width: 350px;
+  padding: 70px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+  border-radius: 25px;
+  text-align: center;
+  margin-left: auto; /* Align container to the right */
+  margin: 230px;
+  
+}
+
+.auth-div h2 {
+  margin-bottom: 20px;
+}
+
+.auth-div input {
+ 
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  float: left;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.auth-div input:focus {
+  border-color: #5a5acb;
+  box-shadow: 0 0 5px rgba(90, 90, 203, 0.5);
+}
+
+.auth-div input:hover {
+  transform: scale(1.05);
+  color: #5a5acb;
+  border-color:  #5a5acb;
+}
+
+.password-input {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  background-color: #ccc;
+  border: none;
+  border-left: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.toggle-password:hover {
+  background-color: #bbb;
+}
+
+.auth-div button {
+  width: 85%;
+  padding: 10px;
+  background-color: white;
+  color: #5a5acb;
+  border-color: #5a5acb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.auth-div button:hover {
+  border-color: #3e3ca000;
+  color: #fafafa;
+  background-color: #5a5acbd2;
+  transform: scale(1.05);
+}
+
+.auth-div p {
+  margin-top: 10px;
+}
+
+.auth-div a {
+  color: #4e4caf;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.auth-div a:hover {
+  text-decoration: underline;
+  color: #3d3ca0;
+}

@@ -1,0 +1,109 @@
+body {
+    margin: 20px;
+    padding: 0;
+    background-image: linear-gradient(to left, #5a5acb, #c5ccea67);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #5a5acbd4;
+    border-radius: 9px;
+    width: 400px;
+}
+
+#eventsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; /* Added margin for separation */
+}
+
+.eventCard {
+    background-color: rgba(255, 255, 255, 0.828);
+    border: 1px solid #dddddd00;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+}
+
+.eventCard:hover {
+    transform: translateY(-10px);
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.408);
+}
+
+.eventCard h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.eventCard p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.eventCard a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.eventCard a:hover {
+    text-decoration: underline;
+}
+
+button {
+    margin: 0.1px;
+    padding: 10px 2px;
+    background-color: #ffffff00;;
+    color: #312461a9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .8em;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: #ffffff00;
+    border-color: #5a5acb0b;
+    color: rgb(0, 0, 0);
+    
+    
+   
+}
+input[type="date"] {
+   
+    font-family: 'Poppins', sans-serif;
+    color: #00000089;
+    padding: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-right: 1px; /* Adjust spacing */
+    transition: 0.3s ease;
+}
+input[type="date"]:hover {
+    transform: scale(1.02);
+    background-color: #ffffff;
+    
+}
+input[type="search"] {
+    font-family: 'Poppins', sans-serif;
+    color: #00000089;
+    padding: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-right: 1px; /* Adjust spacing */
+    transition: 0.3s ease;
+}
+input[type="search"]:hover {
+    transform: scale(1.02);
+    background-color: #ffffff;
+    
+}

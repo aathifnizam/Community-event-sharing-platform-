@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+    background-image: linear-gradient(to left, #5a5acb, #c5ccea67);
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to left, #ffffff, #f7f9ffe3);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-section, .results-section, #editForm {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 6px 16px #5c5d6367;
+    padding: 30px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.search-section h2, .results-section h2, #editForm h2 {
+    color: #5a5acb;
+    text-align: center;
+}
+
+.search-section label, .results-section label, #editForm label {
+    display: block;
+    margin-bottom: 10px;
+    color: #5a5acb;
+}
+
+.search-section input, .results-section input, #editForm input,
+.search-section textarea, .results-section textarea, #editForm textarea,
+.search-section button, .results-section button, #editForm button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000000e0;
+    background-color: #a7b1f644;
+    transition: all 0.5s ease;
+}
+
+.search-section input:hover, .results-section input:hover, #editForm input:hover,
+.search-section textarea:hover, .results-section textarea:hover, #editForm textarea:hover,
+.search-section button:hover, .results-section button:hover, #editForm button:hover {
+    background-color: #ffffff;
+    border-color: #5a5acb;
+}
+
+.search-section input:focus, .results-section input:focus, #editForm input:focus,
+.search-section textarea:focus, .results-section textarea:focus, #editForm textarea:focus {
+    border-color: #5a5acb;
+    box-shadow: 0 0 5px rgba(90, 90, 203, 0.5);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.buttons button {
+    width: 45%;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    color: #ffffff;
+    background-color: #5a5acb;
+}
+
+#editForm {
+    display: none;
+}

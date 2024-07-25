@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit or Delete Events</title>
+    <link rel="stylesheet" href="yourevents.css">
+</head>
+<body>
+    <header>
+        <h1>Edit or Delete Events</h1>
+    </header>
+    <main>
+        <section class="search-section">
+            <h2>Search Event</h2>
+            <form id="searchForm">
+                <label for="searchContactEmail">Contact Email:</label>
+                <input type="email" id="searchContactEmail" name="searchContactEmail" required>
+
+                <label for="searchContactNumber">Contact Number:</label>
+                <input type="tel" id="searchContactNumber" name="searchContactNumber" required>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <h2>Event Details</h2>
+            <div id="eventDetails">
+                <!-- Event details will be populated here -->
+            </div>
+            <div class="buttons">
+                <button id="editEventButton" disabled>Edit Event</button>
+                <button id="deleteEventButton" disabled>Delete Event</button>
+            </div>
+        </section>
+
+        <!-- Edit Form -->
+        <section id="editForm" style="display: none;">
+            <h2>Edit Event</h2>
+            <form id="editEventForm">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" name="eventName" required>
+
+                <label for="eventDate">Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+
+                <label for="eventTime">Time:</label>
+                <input type="time" id="eventTime" name="eventTime" required>
+
+                <label for="eventLocation">Location:</label>
+                <input type="text" id="eventLocation" name="eventLocation" required>
+
+                <label for="eventDescription">Description:</label>
+                <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+
+                <label for="eventFormat">Event Format:</label>
+                <input type="text" id="eventFormat" name="eventFormat" required>
+
+                <label for="ticketOptions">Ticket Options:</label>
+                <input type="text" id="ticketOptions" name="ticketOptions" required>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+
+                <label for="contactEmail">Contact Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+
+                <button type="submit">Update Event</button>
+            </form>
+        </section>
+        <!-- End Edit Form -->
+    </main>
+    <script src="yourevents.js" type="module"></script>
+</body>
+</html>

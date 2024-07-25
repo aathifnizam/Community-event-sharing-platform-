@@ -1,0 +1,114 @@
+/* Importing Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/* Applying Montserrat font to the h5 element */
+
+body {
+    background-image: linear-gradient(to left, #5a5acb, #c5ccea67);
+    font-family: Montserrat, sans-serif; /* Modern font */
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.container {
+    display: row;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 148px;
+    padding: 40px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: -10px 10px;
+    margin-top: 150px;
+    color: #5a5acbd4;
+    position: relative; /* Ensure relative positioning for absolute elements inside */
+}
+
+.button-group {
+    display: block;
+    align-items: last baseline;
+    margin-top: 20px;
+    padding: 0px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    background-color: #fafafa;
+    color: #5a5acbd4;
+    border: 1.5px solid transparent;
+    border-radius: 16px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+}
+
+.button:hover {
+    color: #fafafa;
+    background-color: #5a5acbd4;
+    padding: 18px 25px;
+    border-radius: 18px;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    box-shadow: 15px 10px 25px rgba(0, 0, 0, 0.302);
+    margin: 50px;
+    transform: translate(750px, -299px);
+    background-color: #9e9ef6;
+    background: linear-gradient(to top, #2828d994, #9e9ef6);
+    color: #271c43;
+    border-radius: 20px;
+    padding: 90px 50px;
+}
+
+.text {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.signout {
+    position: fixed; /* Change to fixed positioning */
+    top: 10px; /* Position from the top */
+    right: 10px; /* Position from the right */
+    width: fit-content;
+    text-align: center;
+    color: #5a5acbd4;
+    background-color: #ffffff;
+    padding: 8px 10px;
+    border: 1.5px solid transparent;
+    border-radius: 20px;
+    border-color: #5a5acbd4;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.452);
+    margin: 5px;
+}
+
+.signout:hover {
+    background-color: #5a5acbd4;
+    color: #fafafa;
+    border-color: aliceblue;
+    padding: 8px 12px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event List</title>
+    <link rel="stylesheet" href="join_events.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="join_events.js"></script>
+
+</head>
+<a href="#"><h5 style="font-family: Montserrat, sans-serif; font-weight: bold; font-size: 12px; ">community events sharing platform</h5></a>
+<body>
+    <div class="filter-search-container">
+        <input type="search" id="searchInput" placeholder="Search by Event Name">
+        <button onclick="searchEvents()">Search</button>
+        <input type="date" id="startDate" placeholder="Start Date">
+        <input type="date" id="endDate" placeholder="End Date">
+        <button onclick="filterEventsByDate()">Filter by Date</button>
+    </div>
+    <div id="eventsContainer">
+        <!-- Event cards will be dynamically inserted here -->
+    </div>
+
+    <script type="module">
+        import { filterEventsByDate, searchEvents, debounceSearch } from './join_events.js';
+        window.filterEventsByDate = filterEventsByDate;
+        window.searchEvents = searchEvents;
+    </script>
+</body>
+</html>
